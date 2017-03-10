@@ -1,0 +1,87 @@
+/*页面出现消失的效果*/
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.view-frame.ng-enter {
+    z-index: 2;
+    top: 0;
+    animation: 1s fadeIn;
+}
+.view-frame.ng-leave {
+    z-index: 1;
+    top: 100rem;
+    display: none;
+    animation: 1s fadeOut;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top: 100rem;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+        display: block;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        top: 0;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        top: 100rem;
+        display: none;
+    }
+}
+
+/*tabbar*/
+.view-tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    height: 4rem;
+}
+.view-tabs .tabItem {
+    line-height: 4rem;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+}
+.view-tabs .tabItem a {
+    display: inline-block;
+    height: 4rem;
+    width: 100%;
+    color: #7d7d7d;
+    text-align: center;
+}
+.view-tabs .tabItem a.active {
+    color: #53cac3;
+}
+.view-tabs .tabItem .icon-earth,
+.view-tabs .tabItem .icon-house,
+.view-tabs .tabItem .icon-xiaoxi,
+.view-tabs .tabItem .icon-vipuser {
+    width: 100%;
+    display: block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.view-tabs .tabItem .icon-text {
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    display: block;
+}

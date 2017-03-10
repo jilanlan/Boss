@@ -1,0 +1,305 @@
+.job-detail-title .detail-head-left {
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.job-detail-title .detail-head-right {
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+    position: relative;
+}
+.job-detail-title span[class^="icon-"] {
+    display: inline-block;
+    line-height: 4.7rem;
+    width: 3.5rem;
+    color: white;
+    text-align: center;
+}
+.job-detail-title span,
+.job-detail-title a {
+    display: inline-block;
+    line-height: 4.7rem;
+    color: white;
+    text-align: center;
+}
+.job-detail-title .detail-head-right a{
+    /*margin: auto 0.5rem;*/
+    margin: 0;
+}
+.job-detail-title .detail-head-right .love{
+    position: absolute;
+    top:0px;
+    width: 16px;
+    height: 16px;
+    right: 128px;
+}
+.job-part1 p {
+    padding: -0.4rem 0 0.6rem 0.6rem;
+}
+.job-part1 .ali-title {
+    font-size: 1.6rem;
+    color: #4fc8bf;
+    font-weight: normal;
+}
+.job-part1 .ali-title .aliPay {
+    float: right;
+    padding-right: .5rem;
+    display: inline-block;
+}
+.job-part1 .name_pro {
+    font-size: 1.8rem;
+    color: #353734;
+}
+.job-part1 .loc_edu_exp {
+    font-size: 1.4rem;
+    color: #8f918e;
+}
+.job-part1 .loc_edu_exp span[class^="icon-"] {
+    margin-right: .5rem;
+}
+.job-part1 .loc_edu_exp .icon-benke-,
+.job-part1 .loc_edu_exp .icon-bag {
+    margin-left: 1.5rem;
+}
+
+.job-part2 article{
+    height: 170px;
+    overflow: hidden;
+}
+
+
+
+
+.job-part2 .bottomIcon {
+    text-align: center;
+    margin: .6rem 0;
+    font-size: 2rem;
+}
+.job-part3 span {
+    margin: .5rem 1rem;
+    display: inline-block;
+}
+.job-part3 .html5 {
+    margin-left: 0;
+    text-indent: 0;
+}
+.job-part4 h3 a {
+    display: inline-block;
+    float: right;
+    color: #8f918e;
+    font-weight: normal;
+}
+.job-part4 img {
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    width: auto;
+}
+.job-part4 figcaption {
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+}
+.job-part4 time {
+    float: right;
+}
+.job-part4 .item-content {
+    position: relative;
+    height: 40px;
+}
+.job-part5 img {
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    width: auto;
+}
+.job-part5 figcaption {
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+}
+.job-part6 .pay {
+    float: right;
+}
+.job-part6 .title {
+    float: left;
+}
+.job-part6 .com_pro, .job-part6 .title {
+    color: #393b38;
+}
+.ljgt {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+.ljgt a {
+    display: block;
+    background-color: #4fc8bf;
+    color: #fff;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: auto;
+}
+.toggle input[type="checkbox"] {
+    opacity: 0.1;
+    /*filter: alpha(filter=10);*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.toggle input:checked {
+    border-color: #4cd964;
+    background-color: #4cd964;
+}
+.toggle .track {
+    width: 50px;
+    height: 30px;
+    background-color: #4cd964;
+    transition-timing-function: ease-in-out;
+    transition-property: border ,background-color;
+    border: solid 2px #e6e6e6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.toggle .handle {
+    position: absolute;
+    right: 0;
+    width: 27px;
+    height: 27px;
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+    transition-property: right,background-color;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    border-radius: 27px;
+    background-color: #fff;
+}
+.toggle input:checked + .handle {
+    right: 23px;
+    background-color: #4cd964;
+}
+
+.bgColor,
+.job-detail-title {
+    background: #4fc8bf;
+    color: white;
+}
+.bgMarginColor,
+.job-part1,
+.job-part2,
+.job-part3,
+.job-part4,
+.job-part5,
+.job-part6 {
+    background: white;
+    margin: 1rem 1rem;
+    font-size: 1.4rem;
+    color: #8f918e;
+    padding: .6rem .6rem;
+    text-indent: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.bgMarginColor h3,
+.job-part1 h3,
+.job-part2 h3,
+.job-part3 h3, .job-part4 h3,
+.job-part5 h3,
+.job-part6 h3 {
+    margin: 1rem 0;
+    color: #4fc8bf;
+    font-size: 1.6rem;
+}
+
+
+
+
+.job-choose:after {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.job-choose .chooseItem2 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    text-align: center;
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    color: #aeaeae;
+    cursor: pointer;
+    margin: .7rem 0 .7rem 0;
+    border-right: 1px solid #e4e9e3;
+}
+.job-choose .chooseItem2 .icon-bottom {
+    margin-left: .5rem;
+}
+.job-choose .chooseItem2 .require {
+    position: absolute;
+    top: 3.3rem;
+    left: 0;
+    min-height: 300px;
+    width: 100%;
+    background: #e9efef;
+}
+.job-choose .chooseItem2 .require dt, .job-choose .chooseItem2 .require dd {
+    margin-left: 1rem;
+}
+.job-choose .chooseItem2 .require dt h3, .job-choose .chooseItem2 .require dd h3 {
+    margin-top: 1rem;
+}
+.job-choose .chooseItem2 .require dd {
+    display: inline-block;
+    background: white;
+    width: 6rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin: .5rem .5rem;
+    cursor: pointer;
+}
+.job-choose .chooseItem2 .require dd.select {
+    background: #53cac3;
+}
+.job-choose .chooseItem2 .require .finance, .job-choose .chooseItem2 .require .people_num, .job-choose .chooseItem2 .require .career {
+    text-align: left;
+}
+.job-choose .chooseItem2 .require .reset, .job-choose .chooseItem2 .require .ok {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    height: 3rem;
+}
+.job-choose .chooseItem2 .require .ok {
+    background: #53cac3;
+    color: white;
+}
+.job-choose .chooseItem2 .require .reset {
+    background: white;
+    color: #797979;
+}

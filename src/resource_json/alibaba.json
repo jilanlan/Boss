@@ -1,0 +1,98 @@
+{
+	"jobName":"Web前端",
+	"pay":"15k-30k",
+	"companyName":"阿里巴巴",
+	"location":"余杭区",
+	"accurLocl":"文一西路969号",
+	"exp":"经验不限",
+	"edu":"本科",
+	"website":"www.alibaba.com",
+	"career":"互联网",
+	"process":"已上市",
+	"peoNum":"10000以上",
+	"recomJob":[
+		{
+			"jobName":"WEB前端",
+			"comName":"infosys",
+			"location":"杭州滨江区",
+			"exp":"1-3",
+			"edu":"不限",
+			"pay":"8k-13k",
+			"process":"已上市"
+		},
+		{
+			"jobName":"W前端",
+			"comName":"远煊科技",
+			"location":"杭州滨江区",
+			"exp":"1-3",
+			"edu":"本科",
+			"pay":"10k-20k",
+			"process":"A轮"
+		},
+		{
+			"jobName":"WEB前端",
+			"comName":"专注科技",
+			"location":"杭州拱野区",
+			"exp":"1-3",
+			"edu":"大专",
+			"pay":"8k-10k",
+			"process":"未融资"
+		}
+	],
+	"otherJob":[
+		{
+			"jobName":"WEB前端",
+			"location":"杭州余杭区",
+			"exp":"不限",
+			"edu":"本科",
+			"pay":"15k-30k",
+			"hrName":"tank",
+			"hrPos":"前端专家",
+			"imgUrl":"img/detailImg/tank.png"
+		},
+		{
+			"jobName":"高级前端开发",
+			"location":"杭州滨江区长河",
+			"exp":"不限",
+			"edu":"不限",
+			"pay":"20k-40k",
+			"hrName":"汪洋",
+			"hrPos":"高级前端开发",
+			"imgUrl":"img/detailImg/wangyang.png"
+		},
+		{
+			"jobName":"WEB前端",
+			"location":"杭州余杭区仓前",
+			"exp":"3-5",
+			"edu":"不限",
+			"pay":"20k-30k",
+			"hrName":"萧辰",
+			"hrPos":"开发工程师",
+			"imgUrl":"img/detailImg/xiaocheng.png"
+		},
+		{
+			"jobName":"web前端",
+			"location":"杭州余杭区",
+			"exp":"1-3",
+			"edu":"不限",
+			"pay":"18k-36k",
+			"hrName":"钟大兵",
+			"hrPos":"技术专家",
+			"imgUrl":"img/detailImg/dabing.png"
+		}
+	]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,130 @@
+<header class="search-choose">
+	<div class="job-search clearfix">
+		<form action="#">
+			<input class="search-content" type="search" placeholder="WEB前端">
+        	<div class="search-operation">
+            	<a class="jiahao"><span class="icon-jiahao"></span></a>
+            	<a class="search"><span class="icon-search"></span></a>
+        	</div>
+        </form>
+    </div>
+	<div class="job-choose">
+        <ul class="choose-container clearfix" >
+            <li class="chooseItem">推荐职位<span class="icon-bottom"></span></li>
+            <li class="chooseItem">工作地点<span class="icon-bottom"></span></li>
+            <li class="chooseItem" ng-click="jobFilter()">职位筛选<span class="icon-bottom"></span>
+                <div class="require" ng-show="showjobFilter">
+                    <div class="experience">
+                        <dl>
+                            <dt><h3>工作经验</h3></dt>
+                            
+                            <dd class="select">经验不限</dd>
+                            <dd>应届生</dd>
+                            <dd>3年及以下</dd>
+                            <dd>3-5年</dd>
+                            <dd>5-10年</dd>
+                            <dd>10年以上</dd>
+                            
+                       	</dl>
+                    </div>
+                    <div class="education">
+                        <dl>
+                            <dt ><h3>学历要求</h3></dt>
+                            <dd class="select">不要求</dd>
+                            <dd>大专</dd>
+                            <dd>本科</dd>
+                            <dd>硕士</dd>
+                            <dd>博士</dd>
+                            
+                        </dl>
+                    </div>
+                    <div class="jobType">
+                        <dl>
+                            <dt><h3>工作性质</h3></dt>
+                            <dd class="select">全职</dd>
+                            <dd>兼职</dd>
+                            <dd>实习</dd>
+                            
+                        </dl>
+                    </div>
+                    <div class="require_operation clearfix">
+                        <div class="reset" style="text-align: center;">重置</div>
+                        <div class="ok" style="text-align: center;">完成</div>
+                    </div>
+                </div>
+            </li>
+            <li class="chooseItem" ng-click="companyFilter()">公司筛选<span class="icon-bottom"></span>
+                <div class="require" ng-show="showcompanyFilter">
+                    <div class="finance">
+                        <dl>
+                            <dt><h3>融资阶段</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>未融资</dd>
+                            <dd>天使轮</dd>
+                            <dd>A轮</dd>
+                            <dd>B轮</dd>
+                            <dd>C轮</dd>
+                            <dd>D轮及以上</dd>
+                            <dd>不需要融资</dd>
+                            <dd>已上市</dd>
+                        </dl>
+                    </div>
+                    <div class="people_num">
+                        <dl>
+                            <dt ><h3>人员规模</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>0-20人</dd>
+                            <dd>20-99</dd>
+                            <dd>100-499</dd>
+                            <dd>500-1000</dd>
+                            <dd>1000-9999</dd>
+                            <dd>10000以上</dd>
+                        </dl>
+                    </div>
+                    <div class="career">
+                        <dl>
+                            <dt><h3>行业</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>非互联网</dd>
+                            <dd>健康医疗</dd>
+                            <dd>生活服务</dd>
+                            <dd>旅游</dd>
+                            <dd>其他</dd>
+                        </dl>
+                    </div>
+                    <div class="require_operation clearfix">
+                        <div class="reset" style="text-align: center;">重置</div>
+                        <div class="ok" style="text-align: center;">完成</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<ul class="jobLists">
+    <li ng-repeat="job in companyList" class="jobItem">
+        <a href="#!/job/{{job.id}}">
+            <div class="job_pay clearfix">
+                <h3 class="job">{{job.jobContent}}</h3>
+                <span class="pay">{{job.pay}}</span>
+            </div>
+            <div class="job_detail">
+                <div class="name_pro">
+                    <span class="jobName">{{job.companyName}}</span>
+                    <span class="process">{{job.process}}</span>
+                </div>
+                <div class="loc_exp_edu">
+                    <span class="job-location"><i class="icon-location"></i>{{job.location}}</span>
+                    <span class="job-exp"><i class="icon-bag"></i>{{job.exprience}}</span>
+                    <span class="job-edu"><i class="icon-benke-"></i>{{job.edu}}</span>
+                </div>
+            </div>
+            <div class="hr_info">
+                <img ng-src="{{job.headImgUrl}}" alt="{{job.jobName}}">
+                <span class="hrName">{{job.hrName}}</span>
+                <span class="hr_position">{{job.position}}</span>
+            </div>
+        </a>
+    </li>
+</ul>

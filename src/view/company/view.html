@@ -1,0 +1,80 @@
+<header class="search-choose">
+
+    <div class="job-search2 clearfix ">
+        <h3 class="company-title">公司</h3>
+        <div class="search-operation2 ">
+            <a href="" class="search"><span class="icon-search"></span></a>
+        </div>
+    </div>
+
+    <div class="job-choose">
+        <ul class="choose-container2 clearfix" >
+            <li class="chooseItem2">推荐<span class="icon-bottom"></span></li>
+            <li class="chooseItem2">杭州<span class="icon-bottom"></span></li>
+            <li class="chooseItem2">要求<span class="icon-bottom"></span>
+                <div class="require" style="display:none">
+                    <div class="finance">
+                        <dl>
+                            <dt><h3>融资阶段</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>未融资</dd>
+                            <dd>天使轮</dd>
+                            <dd>A轮</dd>
+                            <dd>B轮</dd>
+                            <dd>C轮</dd>
+                            <dd>D轮及以上</dd>
+                            <dd>不需要融资</dd>
+                            <dd>已上市</dd>
+                        </dl>
+
+                    </div>
+                    <div class="people_num">
+                        <dl>
+                            <dt ><h3>人员规模</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>0-20人</dd>
+                            <dd>20-99</dd>
+                            <dd>100-499</dd>
+                            <dd>500-1000</dd>
+                            <dd>1000-9999</dd>
+                            <dd>10000以上</dd>
+                        </dl>
+                    </div>
+                    <div class="career">
+                        <dl>
+                            <dt><h3>行业</h3></dt>
+                            <dd class="select">全部</dd>
+                            <dd>非互联网</dd>
+                            <dd>健康医疗</dd>
+                            <dd>生活服务</dd>
+                            <dd>旅游</dd>
+                            <dd>其他</dd>
+                        </dl>
+                    </div>
+                    <div class="require_operation clearfix">
+                        <div class="reset" >重置</div>
+                        <div class="ok">完成</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<ul class="company-lists">
+    <li class="companyItem clearfix" ng-repeat="company in companyList">
+        <a href="#!/company/{{company.id}}">
+            <div class="companyImg">
+                <img ng-src="{{company.companyLogo}}" alt="{{company.companyLogo}}">
+            </div>
+            <div class="companyInfo">
+                <h2 class="companyName">{{company.companyName}}</h2>
+                <p>{{company.location}}</p>
+                <p><span>{{company.career}}|</span>
+                    <span>{{company.process}}|</span>
+                    <span>{{company.employNum}}</span></p>
+                <div class="extraInfo">热招| WEB前端工程师 {{company.peoNeed}}人<span class="icon-you"></span></div>
+            </div>
+        </a>
+    </li>
+</ul>

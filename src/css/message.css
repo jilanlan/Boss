@@ -1,0 +1,175 @@
+.message {
+    background: #53cac3;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.message-header {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    height: 3rem;
+    margin: 0 auto;
+    padding: 0;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+}
+.message-header a{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    line-height: 3rem;
+}
+.message-header li:first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+.message-header li:last-child{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+.message-header li a{
+    width: 100%;
+}
+/*.message-header .chat,
+.message-header .inter {
+    line-height: 3rem;
+    color: white;
+    display: block;
+
+}*/
+
+.message-header a {
+    line-height: 3rem;
+    color: white;
+    display: block;
+    
+}
+.message .message-header li a.active {
+    background-color:  white;
+    color: #53cac3;
+    /*color: red;*/
+}
+/*.message-header .chat .active,
+.message-header .inter .active {
+    background: white;
+    color: #53cac3;
+}*/
+/*.chatList{
+    background-color: white;
+}*/
+/*.chatList  .chatItem{
+    position: absolute;
+    bottom: 0;
+    width: 33.33333%
+    height:20px;
+}*/
+.chatList  .active{
+    /*background: red;*/
+    /*color: #53cac3;*/
+    width: 33.333333%;
+    border-bottom: 3px solid #53cac3;
+    /*background-color: #363636;*/
+}
+
+.chatList {
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 3.3rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.chatList .chatItem {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    line-height: 3rem;
+    text-align: center;
+}
+.chatList .chatItem a {
+    color: #b8b8b8;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+}
+.chatList .chatItem.active {
+    /*color: #53cac3;*/
+}
+/*.chatList .underline {
+    background-color: #53cac3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 33.33333%;
+}*/
+
+
+
+.message-lists {
+    margin: 9rem 1rem 5rem 1rem;
+    background: white;
+}
+.message-lists .messItem {
+    border-bottom: 1px solid #b8b8b8;
+}
+.message-lists .messItem a {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+}
+.message-lists .messItem .messImg {
+    width: 25%;
+    float: left;
+    padding: .5rem .5rem .5rem .5rem;
+}
+.message-lists .messItem .messInfo {
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    position: relative;
+}
+.message-lists .messItem .messInfo h3 {
+    font-size: 1.6rem;
+    color: #363636;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+.message-lists .messItem .messInfo p {
+    font-size: 1.4rem;
+    color: #797979;
+}
+.message-lists .messItem .messInfo .text {
+    color: #57cbc4;
+}
+.message-lists .messItem .messInfo span[class^="icon-"] {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: inline-block;
+}
+.message-lists .messItem .messInfo time {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #c1c1c1;
+    font-size: 1.4rem;
+}
+.block{
+    display: block;
+}

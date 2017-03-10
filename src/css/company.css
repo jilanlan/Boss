@@ -1,0 +1,73 @@
+
+
+.job-search2 .company-title {
+text-align: center;
+background: #53cac3;
+line-height: 4.7rem;
+color: #e0f5f4;
+}
+.search-operation2 {
+height: 4.7rem;
+padding: 1.5rem 0 1.5rem 0;
+display: inline-block;
+vertical-align: middle;
+position: absolute;
+top: 0;
+right: 0;
+width: 20%;
+}
+.search-operation2 a {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+.search-operation2 a:after {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.search-operation2 .icon-search {
+    font-size: 2rem;
+}
+
+
+.company-lists {
+    margin: 9rem 1rem 5rem;
+}
+.company-lists .companyItem {
+    background: white;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+.company-lists .companyItem .companyImg {
+    width: 20.83333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+}
+.companyInfo {
+    width: 79.16667%;
+    float: left;
+    padding-right: 0.83333%;
+    padding-left: 1rem;
+}
+.companyInfo .companyName {
+    color: #363636;
+    font-size: 1.8rem;
+}
+.companyInfo .extraInfo {
+    border-top: 1px solid #ededed;
+    padding: 1rem 0 1rem 0;
+    color: #9d9d9d;
+}
+.companyInfo .extraInfo .icon-you {
+    float: right;
+}
+.company-lists .companyItem a {
+    color: #838383;
+}

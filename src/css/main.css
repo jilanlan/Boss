@@ -1,0 +1,49 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e9efef;
+}
+ul, dl, dt, dd ,h1, h2, h3, h4, h5{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+figure {
+  margin: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.blue {
+  color: #4fc8bf;
+}

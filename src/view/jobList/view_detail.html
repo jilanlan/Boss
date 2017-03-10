@@ -1,0 +1,118 @@
+<header class="search-choose">
+    <div class="job-search2" style="background-color: #53cac3;">
+        <div class="job-detail-title clearfix" style="line-height: 4.7rem">
+            <div class="detail-head-left">
+                <a href="#!/jobs"><span class="icon-error"></span></a>
+                <span class="job-share" style="font-weight: 400;color: white">职位分享</span>
+            </div>
+            <div class="detail-head-right">
+                <a class="love" href=""><span  class="icon-interest" style="font-size:2.5rem"></span></a>
+                <a href=""><span class="icon-warning"></span></a>
+                <a href=""><span class="icon-share"></span></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="job_detail_content" style="position: relative;margin: 6rem 0">
+    <section class="job-part1" >
+        <p class="ali-title">
+            <span class="aliJob">{{companyDetail.jobName}}</span>
+            <span class="aliPay">{{companyDetail.pay}}</span>
+        </p>
+        <p class="name_pro">{{companyDetail.companyName}} {{companyDetail.process}}</p>
+        <p class="loc_edu_exp">
+            <span class="icon-location"></span>{{companyDetail.location}}
+            <span class="icon-bag"></span>  {{companyDetail.exp}}
+            <span class="icon-benke-"></span>  {{companyDetail.edu}}
+        </p>
+    </section>
+
+    <section class="job-part2">
+        <h3>职位详情</h3>
+        <article>
+            <dl>
+                <dt>岗位描述</dt>
+                <dd>1、依据产品需求完成高质量的WEB前端开发与技术维护</dd>
+                <dd>2、负责前端开发工作协助页面设计人员与技术人员的工作</dd>
+                <dd>3、在理解产品业务基础上，结合前端技术建立或优化web交互方式</dd>
+            </dl>
+            <dl id="dl_bottom">
+                <dt>岗位要求</dt>
+                <dd>1、掌握良好的前端技能，有较强的的代码能力，了解web标准化，性能优化的方法，了解可能用可访问性和安全性</dd>
+                <dd>2、熟练各种调试，抓包工具。能独立分析解决问题</dd>
+                <dd>3、了解并实践过React和Angular，Vue等前端框架</dd>
+                <dd>4、有良好的团队协作与沟通能力，优秀的心理素质，有较强的责任心</dd>
+            </dl>
+        </article>
+        <p class="bottomIcon" ng-click="showDetail()"><span class="icon-bottom" id="icon-bottom"></span></p>
+    </section>
+
+    <section class="job-part3">
+        <h3>技能要求</h3>
+        <p>
+            <span class="html5">HTML5</span>
+            <span>Javascript</span>
+            <span>前端开发</span>
+        </p>
+    </section>
+
+    <section class="job-part4">
+        <h3>发布人 <a>个人主页<span class="icon-you"></span></a></h3>
+        <figure class="clearfix">
+            <img src="src/img/detailImg/alihr.png">
+            <figcaption>
+                <p>暮云|高级开发经理<time>刚刚发布</time></p>
+                <p>12天前刚发布</p>
+            </figcaption>
+        </figure>
+        <div class="item-content">上线提醒
+            <label class="toggle">
+                <input type="checkbox" ng-model="selected">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </div>
+    </section>
+
+    <section class="job-part5">
+        <h3>公司介绍</h3>
+        <figure class="clearfix">
+            <img src="src/img/detailImg/alilogo.png" alt="">
+            <figcaption>
+                <p>{{companyDetail.companyName}}集团</p>
+                <p>
+                    {{companyDetail.career}}|{{companyDetail.process}}|{{companyDetail.peoNum}}
+                </p>
+            </figcaption>
+        </figure>
+        <p>
+            <span class="icon-location"></span>
+            <span class="blue">{{companyDetail.location}}</span>
+            {{companyDetail.accurLocl}}
+        </p>
+        <p><span class="icon-house"></span>阿里巴巴网络技术有限公司</p>
+    </section>
+
+    <section class="job-part6">
+        <h3>人气职位</h3>
+        <ul>
+            <li class="job-item" ng-repeat="recomJob in companyDetail.recomJob">
+                <p class="clearfix">
+                    <span class="title">{{recomJob.jobName}} </span>
+                    <span class="pay">{{recomJob.pay}}</span>
+                </p>
+                <p class="com_pro">{{recomJob.comName}}  {{recomJob.process}}</p>
+                <p>
+                    <span class="icon-location"></span>
+                    {{recomJob.location}}
+                    <span class="icon-bag"></span> {{recomJob.exp}}
+                    <span class="icon-benke-"></span>{{recomJob.edu}}
+                </p>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<footer class="ljgt"><a>立即沟通</a></footer>
